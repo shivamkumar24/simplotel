@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Simplotel</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#foods">Foods</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <img src="../Assets/menu-bar.png" alt="hamburger" />
+      </div>
+    </nav>
+
+    <!-- body -->
+    <div class="container">
+      <div class="firstContainer">
+        <div class="firstBox">
+          <h1 class="firstBoxHeading">LOREM IPSUM</h1>
+          <p class="firstBoxParagraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+            cum nulla sed animi esse, pariatur earum vitae accusamus neque sunt
+            enim ratione saepe maiores ab cupiditate eligendi! Quas excepturi
+            quod dolore fugiat rerum nihil non, veniam modi. Magni accusantium
+            atque sint maxime veniam ullam consequuntur, eligendi non iure quasi
+            corporis.
+          </p>
+
+          <button class="firstBoxBtn">Click Me</button>
+        </div>
+
+        <div class="secondBox">
+          <img
+            src="../Assets/pexels-robin-stickel-70497.jpg"
+            alt="banner"
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <div class="secondContainer">
+        <div class="imageContainer">
+          <div class="firstImageContainer">
+            <img src="../Assets/pexels-rachel-claire-6752433.jpg" alt="img" />
+            <img src="../Assets/pexels-eva-bronzini-6141651.jpg" alt="img1" />
+          </div>
+          <div class="secondImageContainer">
+            <img src="../Assets/pexels-mister-mister-3434523.jpg" alt="img2" />
+          </div>
+        </div>
+
+        <div class="textContainer">
+          <p class="firstPara">LOREM IPSUM</p>
+          <h1 class="secondPara">LOREM IPSUM SET ADEMIR</h1>
+          <div class="firstTextContainer">
+            <p>Click</p>
+            <img src="../Assets/icons8-arrow-30.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Navbar
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</html>
